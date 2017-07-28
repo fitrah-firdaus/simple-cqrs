@@ -1,0 +1,10 @@
+rootProject.name = 'cqrs'
+include 'cqrs-command'
+findProject(':cqrs-command')?.name = 'cqrs-command'
+include 'cqrs-query'
+findProject(':cqrs-query')?.name = 'cqrs-query'
+include 'cqrs-main'
+findProject(':cqrs-main')?.name = 'cqrs-main'
+include 'cqrs-util'
+findProject(':cqrs-util')?.name = 'cqrs-util'
+
